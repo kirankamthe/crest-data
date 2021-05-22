@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 1em;
+}
+
+.alert-info {
+  background-color: #eaeded !important;
+  box-shadow: 0px 0px 1px 1px #c1c1c1;
+}
+
+.cm-danger-btn {
+  background-color: midnightblue !important;
+  font-size: 10px !important;
+  font-weight: 600 !important;
+  border-radius: 14px;
+}
+
+.thumbnail {
+  border: 1px solid #888;
+  -webkit-box-shadow: 1px 1px 4px 1px #c1c1c1;
+  box-shadow: 1px 1px 4px 1px #c1c1c1;
+  padding: 8px;
+  background-color: white;
+}
+
+.thumbnail b {
+  color: black;
+}
+
+.thumbnail div p {
+  margin: 10px 0px;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  color: #0f1111 !important;
+  font-weight: 600;
+}
+
+.thumbnail .btn-primary,
+.table .btn-primary {
+  background-color: #0ab894;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.amt-add-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-items {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b22222;
+}
+
+.cart-view {
+  color: #0f1111;
+}
+
+.ct-items {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #0f1111 !important;
+  font-weight: 600;
+}
+
+.radio-btns {
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0px;
+}
+
+.radio-btns input[type="radio"] {
+  border: 0px;
+  width: 1.4em;
+  height: 1.4em;
+  margin-top: 0px;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+
+.form-check label {
+  margin: 0px 4px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.table {
+  border: 1px solid #888;
+  box-shadow: 1px 1px 4px 1px #c1c1c1;
+  padding: 8px;
+  background-color: white;
+  color: #0f1111 !important;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px 15px 15px 15px;
+  width: calc(100% - 30px);
+}
+
+.table thead tr th {
+  font-size: 16px;
+  color: white;
+  background-color: #888 !important;
+  padding: 12px 8px;
+}
+
+.table tbody tr th,
+.table tbody tr td {
+  padding: 12px 8px;
+  vertical-align: middle;
+}
+
+.table img {
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.alert-warning {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  z-index: 99;
+  padding: 10px 15px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+}
+
+.compare-btn {
+  background-color: #77bc1f;
+  border-radius: 4px;
+  margin-left: auto;
+  color: white;
+  font-weight: 500;
+}
+
+.compare-modal .table {
+  margin: 0px 0px 15px 0px;
+}
+
+.compare-modal .table thead tr th {
+  font-size: 14px !important;
+}
+
+.compare-modal .cm-danger-btn {
+  font-size: 7px !important;
+  padding: 1px 4px;
+  margin-left: 4px;
+}
