@@ -15,7 +15,6 @@ class Cart extends Component {
           <div className="cart-items">
             Selected items in the cart.
             <br />
-            <br />
           </div>
         )}
         {cartItems.length > 0 && (
