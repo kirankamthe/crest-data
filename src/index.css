@@ -71,10 +71,15 @@ code {
   font-size: 16px;
   font-weight: 600;
   color: #b22222;
+  margin-bottom: 0.5em;
 }
 
 .cart-view {
   color: #0f1111;
+}
+
+.cart-view b {
+  color: navy;
 }
 
 .ct-items {
@@ -134,6 +139,10 @@ code {
   vertical-align: middle;
 }
 
+.table tbody tr {
+  border-bottom: 2px solid #888;
+}
+
 .table img {
   min-width: 50px;
   min-height: 50px;
@@ -162,6 +171,10 @@ code {
 
 .compare-modal .table {
   margin: 0px 0px 15px 0px;
+}
+
+.compare-modal .table tbody tr {
+  border-bottom: none;
 }
 
 .compare-modal .table thead tr th {
