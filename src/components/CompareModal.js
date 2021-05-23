@@ -3,13 +3,13 @@ import "antd/dist/antd.min.css";
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
 
-const CompareModal = ({ isOpen, handleClose, products }) => {
+const CompareModal = ({ isOpen, handleClose, products = [] }) => {
   const [productData, setProductData] = useState([]);
   const [selected, setSelected] = useState([]);
   const [showToSelect, setShowToSelect] = useState(false);
 
   useEffect(() => {
-    setProductData([...products]);
+    setProductData(JSON.parse(JSON.stringify(products)));
   }, [products]);
 
   //set true/false to check box
@@ -74,7 +74,7 @@ const CompareModal = ({ isOpen, handleClose, products }) => {
       >
         {showToSelect ? (
           <>
-            <h4>Select Products to compare</h4>
+            <h4>Select products to compare</h4>
             <table class="table table-bordered">
               <tbody>
                 {productData.map((product) => (
@@ -86,6 +86,7 @@ const CompareModal = ({ isOpen, handleClose, products }) => {
                       />
                     </td>
                     <td>{product.title}</td>
+                    <td>{product.category}</td>
                   </tr>
                 ))}
               </tbody>
@@ -155,7 +156,7 @@ const CompareModal = ({ isOpen, handleClose, products }) => {
                 </tbody>
               </table>
             ) : (
-              <p>There no selected data to compare</p>
+              <p>No selected data to compare</p>
             )}
           </>
         )}
